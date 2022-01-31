@@ -17,23 +17,47 @@ ul{
 li a{
 	display: block;
 	color: white;
-	margin: 0;
-	padding: 14px 16px;
+	margin: 8px 12px;
+	padding: 5px;
 	float: right;
 	text-align: center;
 	text-decoration: none;
 }
-.nav-links  a:hover {
-	background-color: #222222;
+
+.nav-links a{
+	position: relative;
 }
-.nav-links a:active{
-	background-color: #7B6829;
+
+.nav-links a::after {
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 3px;
+	background-color: #264653;
+	left: 50%;
+	bottom: 0;
+	transition: all 0.3s ease-in-out;
 }
+
+.nav-links a:hover::after {
+	width: 100%;
+	left: 0;
+}
+
 .logo-social{
 	height: 32px;
 	width: 32px;
-	fill: #111111;
-
+	position: relative;
+	fill: #686B73;
+}
+.logo-social{
+	transition: fill 0.3s ease-in-out;
+}
+#linkedin:hover{
+	fill: blue;
+}
+#github:hover{
+	fill:black;
 }
 .info{
 	margin: 100px 100px;
