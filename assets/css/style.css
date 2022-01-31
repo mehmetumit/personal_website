@@ -1,11 +1,12 @@
 body{
-	background-color: #009A68;
+	background-color: #264653;
 	color: white;
 	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
 }
 ul{
 	list-style-type: none;
-	background-color: grey;
+	background-color: #2A9D8F;
 	overflow: hidden;
 	position:sticky;
 	top: 0;
@@ -22,13 +23,18 @@ li a{
 	text-align: center;
 	text-decoration: none;
 }
-a:hover {
+.nav-links  a:hover {
 	background-color: #222222;
 }
-a:active{
+.nav-links a:active{
 	background-color: #7B6829;
 }
 .logo-social{
-	height: 20px;
-	width: 20px;
+	height: 32px;
+	width: 32px;
+	fill: #111111;
+
+}
+.info{
+	margin: 100px 100px;
 }
