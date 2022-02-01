@@ -24,4 +24,4 @@ jobs:
           username: ${{ secrets.USER }}
           port: ${{ secrets.PORT }}
           key: ${{ secrets.SSHKEY }}
-          script: cd ${{ secrets.PATH }} && ./auto_minify -ow && rm -f ./auto_minify
+          script: cd ${{ secrets.PATH }} && git clone "https://github.com/mehmetumit/auto_minify.git" && ./auto_minify/auto_minify -ow && rm -rf ./auto_minify
