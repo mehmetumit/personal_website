@@ -19,4 +19,4 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
         with:
           source: "."
-          target: "~/www/personal_www/html/"
+          target: "~/www/personal_www/public/"
