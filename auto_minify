@@ -1,0 +1,41 @@
+#!/bin/bash
+#             _                     _       _  __       
+#  __ _ _   _| |_ ___     _ __ ___ (_)_ __ (_)/ _|_   _ 
+# / _` | | | | __/ _ \   | '_ ` _ \| | '_ \| | |_| | | |
+#| (_| | |_| | || (_) |  | | | | | | | | | | |  _| |_| |
+# \__,_|\__,_|\__\___/___|_| |_| |_|_|_| |_|_|_|  \__, |
+#                   |_____|                       |___/ 
+#
+#author: Mehmet Ümit Özden
+
+# Add whatever file extension you want to minify
+html_path="*.html"
+css_path="assets/css/*.css"
+js_path="assets/js/*.js"
+files="$html_path $css_path $js_path"
+
+help() {
+	cat <<EOF
+usage: auto_minify [OPTIONS...]
+
+Auto minifier script based on minify.
+
+options:
+	-h      Print this text and exit
+	-ow     Overwrite minified file to current file
+	-g      Generate minified files with .min* extension
+EOF
+}
+case "$1" in
+	-ow) # Overwrite
+		for file in $files; do minify $file > "$file.temp"; mv "$file.temp" $file; done
+		;;
+	-g) # Generate min files
+		# Wildcards used for simplicity
+		for file in $files; do if [[ "$file" != *'.min'* ]]; then minify $file > $(echo $file | awk  -F '.' '{printf $1 ".min." $2}') ; fi; done
+		;;
+	-h | *)
+		help
+		;;
+esac
+ 
