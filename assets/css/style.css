@@ -6,7 +6,6 @@ body{
 }
 ul{
 	list-style-type: none;
-	background-color: #2A9D8F;
 	overflow: hidden;
 	position:sticky;
 	top: 0;
@@ -23,7 +22,11 @@ li a{
 	text-align: center;
 	text-decoration: none;
 }
-
+.nav-container {
+	background-color: #2A9D8F;
+	margin: 10px;
+	border-radius: 5px;	
+}
 .nav-links a{
 	position: relative;
 }
@@ -47,17 +50,20 @@ li a{
 .logo-social{
 	height: 32px;
 	width: 32px;
+	padding: 2px;
+	border-radius: 3px;
 	position: relative;
 	fill: #686B73;
 }
 .logo-social{
-	transition: fill 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 #linkedin:hover{
-	fill: blue;
+	background-color: #0073B2;
+	fill: white;
 }
 #github:hover{
-	fill:black;
+	fill:white;
 }
 .info{
 	margin: 100px 100px;
