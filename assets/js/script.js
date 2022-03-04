@@ -1,1 +1,3 @@
-console.log("Hello world js!")
+function changeTitle(val){
+	document.title = val;
+}
