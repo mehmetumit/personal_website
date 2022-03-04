@@ -70,6 +70,12 @@ ul{
 #github:hover{
 	fill: white;
 }
+#hackthebox:hover{
+	fill: #BBFF34;
+}
+#mail:hover{
+	fill: #FF3300;
+}
 .avatar{
 	border-radius: 50%;
 	width: 250px;
