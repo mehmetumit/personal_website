@@ -27,6 +27,7 @@ ul{
 	text-decoration: none;
 }
 .nav-container {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
 	padding: 10px;
 	background-color: #1d3640;
 	margin: 0;
@@ -57,7 +58,6 @@ ul{
 	width: 32px;
 	padding: 2px;
 	border-radius: 3px;
-	position: relative;
 	fill: #686B73;
 }
 .logo-social{
@@ -85,14 +85,63 @@ ul{
 	text-align: center;
 }
 #about{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+	background-color: #1D3640;
 	overflow:hidden;
+	display: grid;
+	grid-template-columns: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin-bottom: 200px;
+}
+@media (min-width: 768px) {
+	#about{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+	background-color: #1D3640;
+	overflow:hidden;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin-bottom: 200px;
+	}
+}
+#inner-projects{
+	grid-template-columns: auto;
+	display: grid;
+}
+#inner-projects a{
 	display: inline-grid;
-	grid-template-columns: auto auto auto;
-	margin-top: 100px;
-	margin-bottom: 100px;
+	text-decoration:none;
+	color:white;
+}
+@media (min-width: 768px) {
+	#inner-projects{
+		display: inline-grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	#inner-projects a{
+		display: inline-grid;
+		text-decoration:none;
+		color:white;
+	}
+}
+.project{
+	padding: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+	border-radius: 10px;
+	font-size: 20px;
+	margin: 10%;
+	background-color: #1D3640;
+	text-align: left;
 }
 h1{
 	font-size: 40px;
+	margin: 50px;
+}
+h2{
+	text-align: center;
+	padding: 20px;
 }
 #about-right{
 	padding: 30px;
@@ -113,6 +162,8 @@ h1{
 	color: #4C9DED;
 }
 footer{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+	bottom: 0;
 	background-color: #1D3640;
 	padding: 30px;
 	text-align: center;
