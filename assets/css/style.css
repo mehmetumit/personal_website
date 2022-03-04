@@ -1,6 +1,8 @@
 body{
 	background-color: #264653;
 	color: white;
+	margin: 0;
+	padding: 0;
 	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 }
@@ -23,8 +25,10 @@ li a{
 	text-decoration: none;
 }
 .nav-container {
-	background-color: #2A9D8F;
-	margin: 10px;
+	background-color: #1d3640;
+	margin: 0;
+	top: 0;
+	position: sticky;
 	border-radius: 5px;	
 }
 .nav-links a{
@@ -36,7 +40,7 @@ li a{
 	content: "";
 	width: 0%;
 	height: 3px;
-	background-color: #264653;
+	background-color: #4C9DED;
 	left: 50%;
 	bottom: 0;
 	transition: all 0.3s ease-in-out;
@@ -63,8 +67,31 @@ li a{
 	fill: white;
 }
 #github:hover{
-	fill:white;
+	fill: white;
 }
-.info{
-	margin: 100px 100px;
+.avatar{
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+}
+.content{
+	text-align: center;
+}
+#about{
+	display: inline-grid;
+	grid-template-columns: auto auto auto;
+	text-align: center;
+	margin: 100px;
+}
+h1{
+	font-size: 40px;
+}
+#info{
+	padding: 30px;
+	font-weight: bold;
+	text-align: left;
+	font-size: 30px;
+}
+#name{
+	color: #4C9DED;
 }
