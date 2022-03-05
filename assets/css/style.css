@@ -75,6 +75,9 @@ ul{
 #mail:hover{
 	fill: #FF3300;
 }
+#fast-finger:hover{
+	fill: #9EC53B;
+}
 .avatar{
 	border-radius: 50%;
 	width: 250px;
