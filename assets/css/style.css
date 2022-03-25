@@ -94,7 +94,6 @@ ul{
 	grid-template-columns: auto;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	margin-bottom: 200px;
 }
 @media (min-width: 500px) {
 	#about{
@@ -105,9 +104,15 @@ ul{
 	grid-template-columns: 1fr 1fr;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	margin-bottom: 200px;
 	}
 }
+#profile{
+	padding: 5px;
+}
+#profile-info{
+	font-size: 20px;
+}
+
 #inner-projects{
 	grid-template-columns: auto;
 	display: grid;
@@ -126,6 +131,10 @@ ul{
 		display: inline-grid;
 		text-decoration:none;
 		color:white;
+	}
+	#profile{
+		padding-right: 50px;
+		padding-left: 50px;
 	}
 }
 .project{
@@ -151,6 +160,7 @@ h2{
 }
 #info{
 	font-weight: bold;
+	font-size: 30px;
 	text-align: left;
 }
 .social-header{
