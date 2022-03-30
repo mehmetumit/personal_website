@@ -17,6 +17,14 @@ ul{
 	padding: 0;
 
 }
+h1{
+	font-size: 40px;
+	margin: 50px;
+}
+h2{
+	text-align: center;
+	padding: 20px;
+}
 .nav-container li a{
 	display: block;
 	color: white;
@@ -119,6 +127,7 @@ ul{
 }
 #inner-projects a{
 	display: inline-grid;
+	margin: 10%;
 	text-decoration:none;
 	color:white;
 }
@@ -142,17 +151,11 @@ ul{
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
 	border-radius: 10px;
 	font-size: 20px;
-	margin: 10%;
 	background-color: #1D3640;
 	text-align: left;
 }
-h1{
-	font-size: 40px;
-	margin: 50px;
-}
-h2{
-	text-align: center;
-	padding: 20px;
+#projects h1{
+	margin-bottom: 0px;
 }
 #about-right{
 	padding: 30px;
