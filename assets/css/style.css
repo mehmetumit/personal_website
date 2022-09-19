@@ -24,12 +24,36 @@ h2 {
   text-align: center;
   padding: 20px;
 }
+.menu-container {
+  display: inline-block;
+  margin-left: 90%;
+  margin-right: 0;
+  cursor: pointer;
+}
+.line-top,
+.line-mid,
+.line-bottom {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.opened .line-top {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.opened .line-mid {
+  opacity: 0;
+}
+.opened .line-bottom {
+  transform: translate(0, -11px) rotate(45deg);
+}
 .nav-container li a {
   display: block;
   color: white;
   margin: 8px 12px;
   padding: 5px;
-  float: right;
+  /*float: right;*/
   text-align: center;
   text-decoration: none;
 }
@@ -41,6 +65,18 @@ h2 {
   top: 0;
   position: sticky;
 }
+.nav-links {
+  position: static;
+  display: none;
+}
+/*.nav-links ul {*/
+/*width: fit-content;*/
+/*}*/
+
+/*.opened .nav-links {*/
+/*position: relative;*/
+/*display: inline-block;*/
+/*}*/
 .nav-links a {
   position: relative;
 }
@@ -151,6 +187,18 @@ h2 {
   padding: 1%;
 }
 @media (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+  .nav-container li a {
+    float: right;
+    text-align: center;
+  }
+  .nav-links {
+    display: block;
+    position: relative;
+    margin: auto;
+  }
   #inner-projects {
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
